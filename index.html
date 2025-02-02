@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trading</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="humburger.js"></script>
+<link rel="stylesheet" href="normalize.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="humburger.js"></script>
+<script src="accordion.js"></script>
 
 <body>
     <header class="header">
@@ -27,76 +27,231 @@
                         <li class="navigation-item"><a class="navigation-link" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <div class="header__buttons">
-                    <a class="header__hamburger hamburger" href="javascript:void(0);">
-                        <span class="hamburger__line"></span>
-                    </a>
-                    <div class="header_auth">
-                        <a class="user-link" href="#"> Sign in for free</a>
-                    </div>
+            </div>
+            <div class="header__buttons">
+                <a class="header__hamburger hamburger" href="javascript:void(0);">
+                    <span class="hamburger__line"></span>
+                </a>
+                <div class="header_auth">
+                    <a class="btn lang-picker" href="#"> en <span class="caret"></span></a>
+                    <a class="btn button_colored signin" href="#"> Sign in for free</a>
                 </div>
             </div>
 
-
         </div>
     </header>
-    <div class="hero-section">
+    <div class="hero-section colored-block">
         <div class="wrapper hero__wrapper">
           <div class="hero__content">
-            <h1 class="hero__title">
+            <h2 class="hero__title">
                 Trade everywhere. 
                 Invest here!
-            </h1>
+            </h2>
             <p class="hero__text">
                 We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. 
             </p>
             <div class="align-content">
-              <a href="#" class="button button_colored">Start trading</a>
+              <a href="#" class="btn button_colored">Start trading</a>
             </div>
           </div>
-          <div class="hero-image"><img src="img/hero-graph.png" alt=""></div>
+          <div class="hero__image"><img src="img/hero-graph.png" alt=""></div>
         </div>
       </div>
-    <section class="welcome">
-        <div class="welcome__wrapper">
-            <div class="welcome__title">
-                <h2 class="welcome__heading"></h2>
-            </div>
-        </div>
-    </section>
     <main class="main">
-        <section class="about" id="about">
+        <section class="getting-started">
             <div class="wrapper">
-                <div class="section__title">
-                    <h2 class="section__heading">About</h2>
+                <h3 class="section__heading">Getting Started Is <span class="text-bg">Fast & Easy</span></h3>
+                <div class="steps">
+                    <div class="step">
+                        <p class="text-color-sm">01.</p>
+                        <h4>Register</h4>
+                        <p>Complete the simple registration to get your trading credentials.</p>
+                    </div>
+                    <div class="step">
+                        <p class="text-color-sm">02.</p>
+                        <h4>Verification</h4>
+                        <p>Big Invest is required to verify your identity, upload your documents quickly and get approved in minutes.</p>
+                    </div>
+                    <div class="step">
+                        <p class="text-color-sm">03.</p>
+                        <h4>Deposit funds</h4>
+                        <p>Big Invest accepts credit cards and bank wires. Just use the secure deposit form and follow the steps.</p>
+                    </div>
+                    <div class="step">
+                        <p class="text-color-sm">04.</p>
+                        <h4>Start Trading</h4>
+                        <p>Once your deposit has been credited, you can begin trading instantly. In no time you will see profits rolling into your account.</p>
+                    </div>
                 </div>
-                <div class="section__description">
-                   
-                </div>
-
             </div>
         </section>
-
-      
-        <section class="contacts" id="contacts">
-            <div class="wrapper">
-                <div class="section__title">
-                    <h2 class="section__heading">Our Contacts</h2>
-                </div>
-        
+        <section class="testimonials">
+            <div class="wrapper">  
+                <div class="section__content">
+                    <div class="left-block">
+                        <h3 class="section__heading">People love Big <span class="text-bg">Invest</span> </h3>
+                        <div class="arrows">
+                            <a href="#" class="arrow-circle"><span class="arrow-left"></span></a>
+                            <a href="#" class="arrow-circle"><span class="arrow-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="right-block">
+                        <div class="slider">
+                            <a href="#" class="arrow-circle slider-control control-left"><span class="arrow-left"></span></a>
+                           <div class="slider__item">
+                            <div class="profile">
+                                <div class="profile__img"><img src="img/profile-foto.png" alt="Albert Abello"></div>
+                                <div class="info">
+                                  <p class="name">Albert Abello</p>
+                                  <p class="position">Director of Growth</p>
+                                </div>
+                              </div>
+                              <div class="review">
+                                <h4>This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.</h4>
+                                <p class="text-color-sm">01 / 04</p>
+                              </div>
+                           </div>
+                              <a href="#" class="arrow-circle slider-control control-right"><span class="arrow-right"></span></a>
+                        </div>
+                    </div>
+                  </div>
             </div>
         </section>
-      
+        <section class="questions">
+            <div class="wrapper">
+                <h3 class="section__heading">Frequently asked <span class="text-bg">questions</span> </h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>How do I change my details?</h4>
+                            <div class="icon">+</div>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet cum nihil voluptate deserunt soluta, non asperiores dolores corporis eligendi id nulla iure eum amet at aut qui temporibus officiis!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>What platforms will I be able to use?</h4>
+                            <div class="icon">+</div>
+                        </div>
+                        <div class="accordion-content">
+                            <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>How do I change my details?</h4>
+                            <div class="icon">+</div>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur quisquam tempore distinctio. Libero dolor esse rem laboriosam amet, repudiandae animi consequuntur a perferendis placeat quam tenetur pariatur aliquam debitis.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>How do I change my details?</h4>
+                            <div class="icon">+</div>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur quisquam tempore distinctio. Libero dolor esse rem laboriosam amet, repudiandae animi consequuntur a perferendis placeat quam tenetur pariatur aliquam debitis.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>How do I change my details?</h4>
+                            <div class="icon">+</div>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur quisquam tempore distinctio. Libero dolor esse rem laboriosam amet, repudiandae animi consequuntur a perferendis placeat quam tenetur pariatur aliquam debitis.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>How do I change my details?</h4>
+                            <div class="icon">+</div>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur quisquam tempore distinctio. Libero dolor esse rem laboriosam amet, repudiandae animi consequuntur a perferendis placeat quam tenetur pariatur aliquam debitis.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>How do I change my details?</h4>
+                            <div class="icon">+</div>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur quisquam tempore distinctio. Libero dolor esse rem laboriosam amet, repudiandae animi consequuntur a perferendis placeat quam tenetur pariatur aliquam debitis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact colored-block">
+            <section class="contact__wrapper wrapper">  
+                <div class="contact__container">
+                  <div class="contact__info">
+                    <h3 class="section__heading">Contact Us!</h3>
+                    <div class="contact__info__support">
+                        <p>The support staff and customer service are available to help you with any questions or needs you might have. Just drop us a line.</p>
+                    </div>
+                    <div class="contact__info__addres">
+                        <p>This site is owned and operated by Kode Tech Solutions LTD</p>
+                        <p><strong>Phone:</strong><br>442038857261</p>
+                        <p><strong>Email:</strong><br>help@google.com</p>
+                        <p><strong>Address:</strong><br>Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic of the Marshall Islands, MH 96960</p>
+                    </div>
+                  </div>
+                  <div class="contact__form-container">
+                    <form class="contact__form">
+                      <input type="text" id="name" name="name" placeholder="Name" required>
+                      <input type="email" id="email" class="success" name="email" placeholder="Email" required >
+                      <textarea id="message" class="error" name="message" rows="4" placeholder="Message" required></textarea>
+                      <button type="submit" class="btn button_colored">Send</button>
+                    </form>
+                  </div>
+                </div>
+              </section>
+        </section> 
     </main>
     <footer class="footer">
         <div class="wrapper footer__wrapper">
-        
-
-
+            <div class="footer__content">
+                <div class="footer__block small">
+                    <div class="logo"><a href="#">Logo</a></div>
+                </div>
+                <div class="footer__block large">
+                    <h5>Information and high risk warning:</h5>
+                    <p>Trading with foreign exchange (FX), contract for differences (CFDs) and precious metals carries a high level of risk that may not be suitable for all investors. Leverage creates additional risk and loss exposure. Before you decide to trade foreign exchange or contract for differences, carefully consider your investment objectives, experience level, and risk tolerance.</p>
+                </div>
+                <div class="footer__block large">
+                    <h5>Legal disclaimer:</h5>
+                    <p>Forex trading entails significant risks and is not appropriate for all investors. The possibility of incurring substantial losses should be taken into account. It is therefore important to understand the possible consequences of investing. Traders should weigh their earning potential against the risks involved and act accordingly. Interactive Trade Ltd operating under brand and using domenLink domain within the European Economic Area.</p>
+                </div>
+                <div class="footer__block small">
+                    <nav class="footer__navigation">
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Instructions</a></li>
+                            <li><a href="#">Platforms</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Sign up for free</a></li>
+                        </ul>
+                    </nav>
+    
+                </div>
+            </div>
+            <div class="footer__links">
+                <div class="footer__copyright">Copyright 2020, All Right Reserved</div>
+                <nav class="footer__links__nav">
+                  <a href="#">Terms and Conditions</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Risk Warnings</a>
+                  <a href="#">Anti-Money Laundering</a>
+                </nav>
+            </div>
         </div>
     </footer>
- 
-
 </body>
-
 </html>
