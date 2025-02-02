@@ -620,10 +620,8 @@ input.success, textarea.success {
 .top-navigation {
   transition: all 0.3s ease-out;
 }
-.header__navigation.open {
-  display: flex;
-  visibility: visible;
-  transform: translateX(-100%);
+.overlay {
+  overflow: hidden;
 }
 @media (max-width: 1245px) { 
   .hamburger {
@@ -642,12 +640,18 @@ input.success, textarea.success {
     transition: all 0.3s ease-out;
     transform: translateX(0);
   }
+  .header__navigation.open {
+    display: flex;
+    visibility: visible;
+    transform: translateX(-100%);
+  }
   .navigation {
       flex-direction: column;
       display: block;
       text-align: center;
       width: 100%;
       padding: 7px;
+      margin: 0;
   }
   .lang-picker{
     display: none;
